@@ -105,7 +105,7 @@ public class TitleCount extends Configured implements Tool {
           }
 
           for(Map.Entry<String, Integer> entry : count.entrySet()) {
-                  context.write(new Text(entry.getKey()), new IntWritable(entry.getValue()));
+            context.write(new Text(entry.getKey()), new IntWritable(entry.getValue()));
           }
         }
     }
